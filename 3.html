@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Your First Product</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+        background: white;
+    }
+    /* Left Form */
+    .form-section {
+        flex: 1;
+        padding-right: 40px;
+    }
+    .form-section h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .form-section h2 {
+        font-size: 20px;
+        margin: 20px 0 10px 0;
+    }
+    label {
+        display: block;
+        margin: 15px 0 5px 0;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+    textarea {
+        height: 80px;
+        resize: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .image-upload {
+        margin: 10px 0;
+        padding: 30px;
+        background: #ececec;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        cursor: pointer;
+    }
+    .checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .checkbox input {
+        margin-right: 10px;
+    }
+    /* Right Product Preview */
+    .preview-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .product-card {
+        width: 300px;
+        background: white;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+    .product-card img {
+        width: 100%;
+        height: auto;
+    }
+    .product-info {
+        padding: 15px;
+    }
+    .product-info h3 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .product-info p {
+        font-size: 14px;
+        line-height: 1.4;
+        border: 1px solid #888;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .price {
+        font-size: 14px;
+    }
+    .price del {
+        color: #555;
+        margin-right: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left Section -->
+    <div class="form-section">
+        <h1>Lets add your first product</h1>
+        <h2>Basic Details</h2>
+
+        <label>Product name</label>
+        <input type="text" placeholder="eg - anatomy book">
+
+        <label>Product Description</label>
+        <textarea placeholder="Write product description here...">Est nisi mollit excepteur laboris tempor fugiat laborum occaecat laborum cillum incididunt ut sit dolor. Consequat veniam ut mollit nos</textarea>
+
+        <label>Add Image(s)</label>
+        <div class="image-upload">📷 Upload image</div>
+
+        <div class="checkbox">
+            <input type="checkbox" checked>
+            <span>this product has an SKU code</span>
+        </div>
+        <input type="text" placeholder="eg - PROD0001">
+    </div>
+
+    <!-- Right Section -->
+    <div class="preview-section">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1598514982901-1b1d0bcb01c3" alt="Product Image">
+            <div class="product-info">
+                <h3>Product title</h3>
+                <p>
+                    Esse minim eiusmod amet et incididunt magna consectetur laborum. Ipsum et cillum do exercitation nostrud nostrud ex. Consectetur Lorem nostrud sint adipisicing amet ipsum cupidatat Lorem adipisicing veniam officia duis excepteur Lorem labore. Non eu non
+                </p>
+                <div class="price">
+                    <del>RS 100</del> RS 90
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
